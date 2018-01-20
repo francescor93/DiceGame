@@ -1,0 +1,126 @@
+body {
+    font-family: Verdana;
+    font-size: 14px;
+    padding: 0 5px;
+}
+input {
+    padding: 5px 10px;
+    border: 1px inset #F7FCF8;
+}
+
+/* REGOLE PER LA VISUALIZZAZIONE DEI DADI */
+#dice {
+    display: flex;
+    background-color: initial;
+    border: initial;
+    margin-top: 21px;
+}
+#dice > div {
+    background: white;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 2px;
+    justify-content: space-between;
+}
+.point {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.face-1 {
+    justify-content: center !important;
+    align-items: center;
+}
+.face-2 .point:last-child {
+    align-self: flex-end;
+}
+.face-3 .point:nth-child(2) {
+    align-self: center;
+}
+.face-3 .point:last-child {
+    align-self: flex-end;
+}
+.face-5 .column:nth-child(2) {
+    justify-content: center;
+}
+
+/* REGOLE PER LA VISUALIZZAZIONE DEL TAVOLO */
+div > span {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 2px 0;
+}
+#table {
+    display: flex;
+    flex-direction: column;
+    max-width: 530px;
+    width: 100%;
+    background-color: #194D1E;
+    padding: 10px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.player {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+    width: 160px;
+    height: 160px;
+}
+.player p {
+    font-size: 70px;
+    background-color: #FFFFFF;
+    border: 1px inset #F7FCF8;
+    text-align: center;
+    overflow: auto;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.player div {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+}
+.player div > * {
+    width: 50%;
+}
+#top, #bottom {
+    display: flex;
+    justify-content: center;
+}
+#middle {
+    display: flex;
+    justify-content: space-between;
+}
+.button {
+    border: 3px inset #A3A393;
+    cursor: pointer;
+    background-color: #AB201B;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+.credits {
+    color: #F7BC05;
+    font-weight: bold;
+    text-align: right;
+}
+@media screen and (max-width:529px) {
+    #middle {
+        flex-direction: column;
+        align-items: center;
+    }
+}

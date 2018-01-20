@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Gioco Dadi</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div id="table">
+        <div id="top">
+            <div class="player">
+                <span>Giocatore 1</span>
+                <p id="dicesPlayer1"></p>
+                <div>
+                    <input id="betPlayer1" class="betInput" type="number" min="10" max="50" placeholder="Puntata" autofocus />
+                    <span class="credits"><i class="fa fa-money" aria-hidden="true"></i><span id="creditsPlayer1">100</span></span>
+                </div>
+            </div>
+        </div>
+        <div id="middle">
+            <div class="player">
+                <span>Giocatore 2</span>
+                <p id="dicesPlayer2"></p>
+                <div>
+                    <input id="betPlayer2" class="betInput" type="number" min="10" max="50" disabled />
+                    <span class="credits"><i class="fa fa-money" aria-hidden="true"></i><span id="creditsPlayer2">100</span></span>
+                </div>
+            </div>
+            <div class="table">
+                <div id="dice">
+                    <div id="dice1"></div>
+                    <div id="dice2"></div>
+                </div>
+                <button class="button" id="run">Tira i dadi</button>
+            </div>
+            <div class="player">
+                <span>Giocatore 3</span>
+                <p id="dicesPlayer3"></p>
+                <div>
+                    <input id="betPlayer3" class="betInput" type="number" min="10" max="50" disabled />
+                    <span class="credits"><i class="fa fa-money" aria-hidden="true"></i><span id="creditsPlayer3">100</span></span>
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+            <div class="player">
+                <span>Giocatore 4</span>
+                <p id="dicesPlayer4"></p>
+                <div>
+                    <input id="betPlayer4" class="betInput" type="number" min="10" max="50" disabled />
+                    <span class="credits"><i class="fa fa-money" aria-hidden="true"></i><span id="creditsPlayer4">100</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
